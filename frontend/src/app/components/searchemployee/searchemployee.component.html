@@ -1,0 +1,84 @@
+<h2 class="page-header text-center" >Search</h2>
+<form class="form-signin" (submit)="onSearchSubmit()">
+
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" class="form-control" placeholder="Enter Phone Number" [(ngModel)]="phone" name="phone">
+      </div>
+
+      <div class="text-center">
+          <input class="btn btn-lg btn-primary" type="submit" value="Search">
+        </div>
+        <br><br>
+
+        <div *ngFor="let rec of employee"  align="center">
+        <table  border="1" >
+            <tr>
+                <td class="blocks">Firstname</td><td class="blocks">{{rec.fname}}</td>
+            </tr>
+            <tr>
+                <td class="blocks">Lastname</td><td class="blocks">{{rec.lname}}</td>
+            </tr>
+            <tr>
+                <td class="blocks">Email</td><td class="blocks">{{rec.email}}</td>
+            </tr>
+            <tr>
+                <td class="blocks">Phone</td><td class="blocks">{{rec.phone}}</td>
+            </tr>
+            <tr>
+                <td class="blocks">Company</td><td class="blocks">{{rec.company}}</td>
+            </tr>
+            <tr>
+                <td class="blocks">Gender</td><td class="blocks">{{rec.gender}}</td>
+            </tr>
+            <tr>
+                <td class="blocks">No.of Projects</td><td class="blocks">{{rec.projectcount}}</td>
+            </tr>
+            <tr>
+                <td class="blocks">Technical</td><td class="blocks">{{rec.technical}}</td>
+            </tr>
+            <tr>
+                <td class="blocks">Communication</td><td class="blocks">{{rec.communicational}}</td>
+            </tr>
+            <tr>
+                <td class="blocks">Behaviour</td><td class="blocks">{{rec.behaviour}}</td>
+            </tr>
+
+        </table>    
+        <br><br><br>  
+    </div>
+            
+            <!-- <tr>
+                      <th>#</th>
+                      <th>Firstname</th>
+                      <th>LastName</th>
+                      <th>Email</th>
+                      <th>Phone Number</th>
+                      <th>Company</th>
+                      <th>Gender</th>
+                      <th>No.of Projects</th>
+                      <th>Technical Rating</th>
+                      <th>Communicational Rating</th>
+                      <th>Behaviour Rating</th>
+
+                  </tr>
+
+              <tbody>
+                  <tr *ngFor="let rec of employee">
+                      <td scope="row">{{employee.indexOf(rec)+1}}</td>
+                      <td>{{rec.fname}}</td>
+                      <td>{{rec.lname}}</td>
+                      <td>{{rec.email}}</td>
+                      <td>{{rec.phone}}</td>
+                      <td>{{rec.company}}</td>
+                      <td>{{rec.gender}}</td>
+                      <td>{{rec.projectcount}}</td>
+                      <td>{{rec.technical}}</td>
+                      <td>{{rec.communicational}}</td>
+                      <td>{{rec.behaviour}}</td>
+
+                  </tr>
+              </tbody> -->
+              <!--Table body-->
+          
+</form>

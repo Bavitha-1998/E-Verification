@@ -1,0 +1,52 @@
+
+<div style="background-color:#e8decd;width:135.6%;height:600px;margin-left:-200px;margin-right:-570px;">
+    <h2 class="page-header text-center">Register</h2>
+    <form (submit)="onRegisterSubmit()" >
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" [(ngModel)]="name" name="name" class="form-control" id="name" placeholder="Enter Name">
+      </div>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" [(ngModel)]="username" name="username" class="form-control" id="username" placeholder="Enter Username">
+      </div>
+      <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" [(ngModel)]="company" name="company" class="form-control" id="company" placeholder="Your Company">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" [(ngModel)]="phone" name="phone" class="form-control" id="phone" placeholder="Phone Number">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" [(ngModel)]="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" [(ngModel)]="password" name="password" class="form-control" id="password" placeholder=" Enter Password">
+      </div>
+      <div class="text-center">
+      <input type="submit" class="btn btn-primary" value="Submit">
+    </div>
+    </form>
+    
+  </div>
+  
+  <h1 class="text-center">Features</h1><br>
+  <div class="row">
+     <div class="col-md-4">
+      <h3>Add Employee Data</h3>
+       <p>HR can add their company employee data which is not modifiable</p>
+      </div>
+    <div class="col-md-4">
+      <h3>Search Employee</h3>
+      <p>HR can check the performance details of an employee in which he worked previously</p>
+      </div>
+    <div class="col-md-4">
+     <h3>Chain Validity</h3>
+     <p>At any time HR can check whether chain is valid or not means any employee details were changed or not</p>
+      </div>

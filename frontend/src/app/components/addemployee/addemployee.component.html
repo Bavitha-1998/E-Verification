@@ -1,0 +1,81 @@
+<div style="background-color:#e8decd;width:135.6%;height:900px;margin-left:-200px;margin-right:-570px;">
+    <h2 class="page-header text-center">Add Employee</h2>
+    <form (submit)="onAddemployeeSubmit()" >
+      <div class="form-group">
+        <label for="fname">First Name</label>
+        <input type="text" [(ngModel)]="fname" name="fname" class="form-control" id="fname" placeholder="Enter First Name">
+      </div>
+
+      <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" [(ngModel)]="lname" name="lname" class="form-control" id="lname" placeholder="Enter Last Name">
+        </div>
+
+      
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" [(ngModel)]="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" [(ngModel)]="phone" name="phone" class="form-control" id="phone" placeholder="Phone Number">
+          </div>
+        
+        <div class="form-group">
+            <label for="gender">Gender</label>
+              <table>
+                <tr>
+                  <td style="padding:10px"><input type="radio" [(ngModel)]="gender" name="gender"  id="gender" value="male" checked> Male</td>
+                   <td style="padding:10px"> <input type="radio" [(ngModel)]="gender" name="gender" id="gender"  value="female"> Female</td>
+                    <td style="padding:10px"><input type="radio" [(ngModel)]="gender" name="gender" id="gender" value="other"> Other</td>
+            </tr>
+            </table>
+           </div>
+
+           <div class="form-group">
+              <label for="projectcount">No.of Projects Involved</label>
+              <input type="text" [(ngModel)]="projectcount" name="projectcount" class="form-control" id="projectcount" placeholder="No.of Projects">
+            </div>    
+
+           <div class="form-group">
+              <label for="technical">Technical Rating&nbsp;&nbsp;&nbsp;</label>
+              <select name="technical" id="technical" [(ngModel)]="technical">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="communicational">Communication Rating&nbsp;&nbsp;&nbsp;</label>
+                <select name="communicational" id="communicational" [(ngModel)]="communicational">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+              </div>
+
+              <div class="form-group">
+                  <label for="behaviour">Behaviour Rating&nbsp;&nbsp;&nbsp;</label>
+                  <select name="behaviour" id="behaviour" [(ngModel)]="behaviour">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                </div>
+      
+      <div class="text-center">
+      <input type="submit" class="btn btn-primary" value="Submit">
+    </div>
+    </form>
+    
+  </div>

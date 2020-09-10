@@ -1,0 +1,26 @@
+<div *ngIf="user" align="center">
+    <br><br><br>
+  <h2 class="page-header dash-item"> Welcome  {{user.name}}</h2>
+  <br>
+  <div >
+  <table class="prof-item"  border="5px" >
+      <tr >
+        <td style="padding:10px" >Name  </td> <td> {{user.name}}</td>
+      </tr>
+      <tr >
+          <td style="padding:10px">Username  </td> <td> {{user.username}}</td>
+        </tr>
+      <tr >
+            <td style="padding:10px">Email  </td> <td> {{user.email}}</td>
+         </tr>
+      <tr >
+            <td style="padding:10px">Company  </td> <td> {{user.company}}</td>
+        </tr>
+       <tr >
+              <td style="padding:10px">Phone Number  </td> <td> {{user.phone}}</td>
+          </tr>
+
+
+    </table>
+  </div>
+</div>

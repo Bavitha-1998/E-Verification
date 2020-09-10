@@ -1,0 +1,36 @@
+<div style="background-color:#e8decd;width:137.3%;height:400px;margin-left:-210px;margin-right:-600px;">
+<h2 class="page-header text-center" >Login</h2>
+<form class="form-signin" (submit)="onLoginSubmit()">
+        <div class="form-group">
+          <label for="Username">Username</label>
+          <input type="text" class="form-control" placeholder="Enter Username" [(ngModel)]="username" name="username">
+        </div>
+        <div class="form-group">
+        <label for="Password">Password</label>
+        <input type="password" class="form-control" placeholder=" Enter Password" [(ngModel)]="password" name="password">
+        </div>
+        <div class="checkbox text-center">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <div class="text-center">
+        <input class="btn btn-lg btn-primary" type="submit" value="Login">
+          </div>
+</form>
+</div>
+<br><br>
+<h1 class="text-center">Features</h1><br>
+<div class="row">
+   <div class="col-md-4">
+    <h3>Add Employee Data</h3>
+     <p>HR can add their company employee data which is not modifiable</p>
+    </div>
+  <div class="col-md-4">
+    <h3>Search Employee</h3>
+    <p>HR can check the performance details of an employee in which he worked previously</p>
+    </div>
+  <div class="col-md-4">
+   <h3>Chain Validity</h3>
+   <p>At any time HR can check whether chain is valid or not means any employee details were changed or not</p>
+    </div>
